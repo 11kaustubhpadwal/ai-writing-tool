@@ -1,8 +1,6 @@
 import { pxToRem } from "../../utils/pxToRem";
 
 export const navbarWrapper = {
-  background: "#12141D",
-  color: "#FAFAFA",
   padding: `${pxToRem(34)} ${pxToRem(170)}`,
 };
 
