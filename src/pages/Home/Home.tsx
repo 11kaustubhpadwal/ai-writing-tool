@@ -4,19 +4,26 @@ import Clients from "./Clients";
 import Features from "./Features";
 import HeroSection from "./HeroSection";
 import InfoImageSection from "./InfoImageSection";
+import Line from "./Line";
+import Plans from "./Plans";
+import { wrapper } from "./styles";
+import Testimonials from "./Testimonials";
 import WritingTools from "./WritingTools";
 
 const Home = () => {
   return (
-    <Box sx={{ background: "#12141D", color: "#FAFAFA" }}>
+    <Box sx={wrapper}>
       <Navbar />
       <HeroSection />
-      <Box sx={{ border: ".063rem solid #252835", marginBottom: "7rem" }} />
+      <Line />
       <Clients />
       <InfoImageSection />
       <WritingTools />
-      <Box sx={{ border: ".063rem solid #252835", marginBottom: "7rem" }} />
+      <Line />
       <Features />
+      <Testimonials />
+      <Line />
+      <Plans />
     </Box>
   );
 };
